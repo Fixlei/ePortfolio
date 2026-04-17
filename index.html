@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Your Name — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/animations.css"/>
+</head>
+<body>
+
+<!-- ========== NAVIGATION ========== -->
+<nav id="navbar">
+    <div class="nav-logo">~/portfolio</div>
+    <div class="nav-links">
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#experience">experience</a>
+        <a href="#contact">contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section id="hero">
+    <div class="hero-content">
+        <div class="hero-tag">AVAILABLE FOR INTERNSHIP · 2025</div>
+        <h1 class="hero-name">MINGHUA<br><span>LEI</span></h1>
+        <p class="hero-title">Software Engineer · Full-Stack Developer</p>
+        <p class="hero-desc">
+            Computer science student focused on building clean, efficient web applications.
+            Looking for Summer 2025 internship opportunities.
+        </p>
+        <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+        </div>
+    </div>
+    <div class="hero-grid" aria-hidden="true"></div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section id="about">
+    <div class="section-header">
+        <div class="section-num">01 / ABOUT</div>
+        <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+        <div class="about-text">
+            <!-- TODO: Replace with your real info -->
+            <p>Hi! I'm <strong>[Minghua Lei]</strong>, studying Computer Science at [Northeastern University], graduating in
+                [Year].</p>
+            <p>I enjoy building full-stack web applications and have experience with modern JavaScript frameworks.
+                Outside of class, I participate in hackathons and contribute to open source projects.</p>
+            <p>Currently seeking software engineering internship opportunities for Summer 2026.</p>
+        </div>
+        <div class="skills-col">
+            <div class="skills-label">TECH STACK</div>
+            <div class="skills-grid">
+                <!-- TODO: Update with your actual skills -->
+                <div class="skill-tag">React / Next.js</div>
+                <div class="skill-tag">TypeScript</div>
+                <div class="skill-tag">Node.js</div>
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">SQL / PostgreSQL</div>
+                <div class="skill-tag">Git / GitHub</div>
+                <div class="skill-tag">Docker</div>
+                <div class="skill-tag">AWS</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ========== PROJECTS ========== -->
+<section id="projects">
+    <div class="section-header">
+        <div class="section-num">02 / PROJECTS</div>
+        <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="projects-list">
+
+        <!-- TODO: Replace with your real projects -->
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Project Name 01</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/yourname/project1" target="_blank">GitHub ↗</a>
+                    <a class="project-link" href="#" target="_blank">Demo ↗</a>
+                </div>
+            </div>
+            <p class="project-desc">
+                One or two sentences describing what this project does, your role, and the impact or results achieved.
+            </p>
+            <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Project Name 02</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/yourname/project2" target="_blank">GitHub ↗</a>
+                    <a class="project-link" href="#" target="_blank">Demo ↗</a>
+                </div>
+            </div>
+            <p class="project-desc">
+                One or two sentences describing what this project does, your role, and the impact or results achieved.
+            </p>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">PostgreSQL</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Project Name 03</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/yourname/project3" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <p class="project-desc">
+                One or two sentences describing what this project does, your role, and the impact or results achieved.
+            </p>
+            <div class="project-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Docker</span>
+                <span class="tag">AWS</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ========== EXPERIENCE ========== -->
+<section id="experience">
+    <div class="section-header">
+        <div class="section-num">03 / EXPERIENCE</div>
+        <h2 class="section-title">Education &amp; Experience</h2>
+    </div>
+    <div class="timeline">
+
+        <!-- TODO: Replace with your real education -->
+        <div class="timeline-item">
+            <div class="timeline-meta">2022 — 2026</div>
+            <div class="timeline-title">B.S. Computer Science</div>
+            <div class="timeline-company">[Your University]</div>
+            <div class="timeline-desc">
+                GPA: 3.8/4.0 · Relevant coursework: Data Structures, Algorithms, Operating Systems, Databases
+            </div>
+        </div>
+
+        <!-- TODO: Replace with your real experience -->
+        <div class="timeline-item">
+            <div class="timeline-meta">Jun 2024 — Aug 2024</div>
+            <div class="timeline-title">Software Engineering Intern</div>
+            <div class="timeline-company">[Company Name]</div>
+            <div class="timeline-desc">
+                Built and shipped features using React + Node.js. Improved page load performance by XX%.
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-meta">Sep 2023 — Present</div>
+            <div class="timeline-title">Developer</div>
+            <div class="timeline-company">University Tech Club</div>
+            <div class="timeline-desc">
+                Maintain the club website, run coding workshops, and lead a team in hackathons.
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact">
+    <div class="contact-inner">
+        <div class="section-num" style="text-align:center; margin-bottom:0.75rem;">04 / CONTACT</div>
+        <h2 class="contact-headline">Let's build something together.</h2>
+        <!-- TODO: Replace with your real contact links -->
+        <p class="contact-sub">Open to Summer 2025 software engineering internships.</p>
+        <div class="contact-links">
+            <a class="contact-link" href="mailto:your@email.com">✉ Email</a>
+            <a class="contact-link" href="https://linkedin.com/in/yourname" target="_blank">in LinkedIn</a>
+            <a class="contact-link" href="https://github.com/yourname" target="_blank">⌥ GitHub</a>
+            <a class="contact-link" href="assets/resume.pdf" target="_blank">↓ Resume</a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+    <!-- TODO: Replace with your name -->
+    built with ♡ &nbsp;·&nbsp; &copy; 2026 Minghua Lei
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

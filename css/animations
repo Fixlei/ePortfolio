@@ -1,0 +1,41 @@
+/* ============================================
+   HERO ENTRANCE ANIMATIONS
+   ============================================ */
+.hero-tag,
+.hero-name,
+.hero-title,
+.hero-desc,
+.hero-cta {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.hero-tag   { animation-delay: 0.1s; }
+.hero-name  { animation-delay: 0.25s; }
+.hero-title { animation-delay: 0.4s; }
+.hero-desc  { animation-delay: 0.5s; }
+.hero-cta   { animation-delay: 0.65s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   SCROLL REVEAL
+   JS adds .reveal to elements, then .visible
+   when they enter the viewport
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
