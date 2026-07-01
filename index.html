@@ -77,71 +77,141 @@
 <hr class="divider"/>
 
 <!-- ========== PROJECTS ========== -->
-<section id="projects">
-    <div class="section-header">
-        <div class="section-num">02 / PROJECTS</div>
-        <h2 class="section-title">Projects</h2>
+<!-- Featured Projects — from resume -->
+<div class="project-card">
+    <div class="project-top">
+        <div class="project-name">Medicaid Healthcare Data Analysis</div>
+        <div class="project-links">
+            <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+        </div>
     </div>
-    <div class="projects-list">
-
-        <!-- TODO: Replace with your real projects -->
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-name">Project Name 01</div>
-                <div class="project-links">
-                    <a class="project-link" href="https://github.com/yourname/project1" target="_blank">GitHub ↗</a>
-                    <a class="project-link" href="#" target="_blank">Demo ↗</a>
-                </div>
-            </div>
-            <p class="project-desc">
-                One or two sentences describing what this project does, your role, and the impact or results achieved.
-            </p>
-            <div class="project-tags">
-                <span class="tag">React</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">MongoDB</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-name">Project Name 02</div>
-                <div class="project-links">
-                    <a class="project-link" href="https://github.com/yourname/project2" target="_blank">GitHub ↗</a>
-                    <a class="project-link" href="#" target="_blank">Demo ↗</a>
-                </div>
-            </div>
-            <p class="project-desc">
-                One or two sentences describing what this project does, your role, and the impact or results achieved.
-            </p>
-            <div class="project-tags">
-                <span class="tag">Python</span>
-                <span class="tag">FastAPI</span>
-                <span class="tag">PostgreSQL</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-name">Project Name 03</div>
-                <div class="project-links">
-                    <a class="project-link" href="https://github.com/yourname/project3" target="_blank">GitHub ↗</a>
-                </div>
-            </div>
-            <p class="project-desc">
-                One or two sentences describing what this project does, your role, and the impact or results achieved.
-            </p>
-            <div class="project-tags">
-                <span class="tag">TypeScript</span>
-                <span class="tag">Docker</span>
-                <span class="tag">AWS</span>
-            </div>
-        </div>
-
+    <p class="project-desc">
+        Built an end-to-end analysis pipeline on a public-health Medicaid dataset. Cleaned and encoded categorical variables, computed descriptive statistics, and generated a correlation heatmap to identify drivers of Medicaid participation. Tested statistical significance using a two-sample t-test and built logistic regression and decision-tree classifiers to predict participation rates.
+    </p>
+    <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">scikit-learn</span>
+        <span class="tag">Statistical Modeling</span>
+        <span class="tag">Jupyter</span>
     </div>
+</div>
+
+<div class="project-card">
+    <div class="project-top">
+        <div class="project-name">EDI Purchase Order Simulator</div>
+        <div class="project-links">
+            <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+        </div>
+    </div>
+    <p class="project-desc">
+        Built a backend procurement-automation service simulating B2B purchase-order exchange between hospitals and suppliers, using Java 17 and Spring Boot 3.2 in a clean layered architecture. Engineered a scheduled monitor that triggers automated reorder workflows over REST, with a Spring Data JPA audit trail logging every transaction.
+    </p>
+    <div class="project-tags">
+        <span class="tag">Java 17</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">REST APIs</span>
+        <span class="tag">JPA</span>
+        <span class="tag">Maven</span>
+    </div>
+</div>
+
+<div class="project-card">
+    <div class="project-top">
+        <div class="project-name">Restaurant Order System</div>
+        <div class="project-links">
+            <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+        </div>
+    </div>
+    <p class="project-desc">
+        Designed a normalized 3NF MySQL schema with 9 interconnected tables enforcing data integrity. Built a full Java/JDBC data-access layer handling end-to-end transactions: user authentication, cart ordering, delivery-fee calculation, payment processing, and order-status tracking via multi-table JOINs.
+    </p>
+    <div class="project-tags">
+        <span class="tag">Java</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">JDBC</span>
+        <span class="tag">Database Design</span>
+        <span class="tag">3NF Schema</span>
+    </div>
+</div>
+
+<div class="project-card">
+    <div class="project-top">
+        <div class="project-name">Toy's E-Commerce Website</div>
+        <div class="project-links">
+            <a class="project-link" href="https://github.com/Fixlei/toysss" target="_blank">GitHub ↗</a>
+        </div>
+    </div>
+    <p class="project-desc">
+        Designed and developed a full-stack e-commerce website featuring product galleries, user authentication, and a payments page. Implemented responsive design principles to optimize user experience across devices. Deployed to production via GitHub Pages, demonstrating end-to-end delivery from concept to live deployment.
+    </p>
+    <div class="project-tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">PHP</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">GitHub Pages</span>
+    </div>
+</div>
+
+<div class="project-card">
+    <div class="project-top">
+        <div class="project-name">Java EE User Management Application</div>
+        <div class="project-links">
+            <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+        </div>
+    </div>
+    <p class="project-desc">
+        Built a multi-component web application handling user registration, authentication, and HTTP GET/POST form processing. Designed and implemented a MySQL database schema with full JDBC integration. Applied object-oriented design principles using JavaBeans across a structured multi-servlet architecture.
+    </p>
+    <div class="project-tags">
+        <span class="tag">Java</span>
+        <span class="tag">Jakarta Servlets</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">JDBC</span>
+        <span class="tag">OOP</span>
+    </div>
+</div>
+
+<div class="project-card">
+    <div class="project-top">
+        <div class="project-name">Digital Display Screens — MBTA Orange Line</div>
+        <div class="project-links">
+            <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+        </div>
+    </div>
+    <p class="project-desc">
+        Redesigned the in-car LED interface applying UX principles and cognitive theory to improve real-time visual communication and sensory engagement. Proposed an ad-supported revenue model to fund system maintenance, balancing user needs, technical constraints, and business objectives in a real-world transportation context.
+    </p>
+    <div class="project-tags">
+        <span class="tag">UX Design</span>
+        <span class="tag">Cognitive Theory</span>
+        <span class="tag">User Research</span>
+        <span class="tag">Business Model</span>
+    </div>
+</div>
+
+<div class="project-card">
+    <div class="project-top">
+        <div class="project-name">Information Security Governance — Marriott Data Breach</div>
+        <div class="project-links">
+            <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+        </div>
+    </div>
+    <p class="project-desc">
+        Conducted a governance and risk assessment analysis of the Marriott data breach. Evaluated regulatory compliance gaps across FTC and GDPR frameworks. Developed control recommendations demonstrating an understanding of real-world security challenges and best practices.
+    </p>
+    <div class="project-tags">
+        <span class="tag">Risk Assessment</span>
+        <span class="tag">Regulatory Compliance</span>
+        <span class="tag">GDPR</span>
+        <span class="tag">FTC</span>
+        <span class="tag">Security Governance</span>
+    </div>
+</div>
+
+</div>
 </section>
-
-<hr class="divider"/>
 
 <!-- ========== EXPERIENCE ========== -->
 <section id="experience">
@@ -210,4 +280,4 @@
 <script src="js/main.js"></script>
 
 </body>
-</html>
+</html>p
