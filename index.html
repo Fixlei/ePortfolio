@@ -13,7 +13,7 @@
 
 <!-- ========== NAVIGATION ========== -->
 <nav id="navbar">
-    <div class="nav-logo">~/ming</div>
+    <div class="nav-logo">~/Minghua Lei</div>
     <div class="nav-links">
         <a href="#about">about</a>
         <a href="#projects">projects</a>
@@ -28,12 +28,12 @@
 <!-- ========== HERO ========== -->
 <section id="hero">
     <div class="hero-content">
-        <div class="hero-tag">AVAILABLE FOR INTERNSHIP · 2026</div>
-        <h1 class="hero-name">MINGHUA<br><span>LEI</span></h1>
-        <p class="hero-title">Data Engineer & Full-Stack Developer</p>
+        <img class="hero-avatar" src="assets/images/avatar.jpg" alt="Minghua Lei"/>
+        <div class="hero-tag">AVAILABLE FOR INTERNSHIP · Fall 2026</div>
+        <h1 class="hero-name">Minghua <span>Lei</span></h1>
+        <p class="hero-title">Software Developer</p>
         <p class="hero-desc">
-            Computer science student focused on web applications.
-            Looking for a chance to get into the industry.
+            ~~~~~~~~~~~~~~
         </p>
         <div class="hero-cta">
             <a class="btn btn-primary" href="#projects">View Projects</a>
@@ -53,11 +53,13 @@
         <div class="about-text">
             <!-- TODO: Replace with your real info -->
             <p>Hi! I'm <strong> Minghua Lei </strong>
-                CS Master @ Northeastern.
-                Studying Computer Science at Khoury Computer Science College, Northeastern University.</p>
-            <p>I am a Computer Science graduate student at Northeastern University with hands-on experience in Java,
-                SQL, and web development through academic projects, including a team-built calendar application using MVC architecture.
-                </p>
+                Computer Science graduate student (MSCS) at Northeastern University, building full-stack and
+                object-oriented applications in Java, Spring Boot, MySQL, and SQL.<br>
+                Beyond coding, I bring strong written and verbal communication and a systems-thinking approach to
+                problem-solving — grounded in coursework in organizational communication, systems design,
+                and user experience.<br>
+                I care about clean, maintainable code — design patterns, MVC architecture, and Git/GitHub as standard
+                practice.</p>
             <p>Currently seeking software engineering internship opportunities for Summer 2026.</p>
         </div>
         <div class="skills-col">
@@ -78,157 +80,192 @@
 
 <!-- ========== PROJECTS ========== -->
 <!-- Featured Projects — from resume -->
-
-<div class="project-card">
-    <div class="project-top">
-        <div class="project-name">Medicaid Healthcare Data Analysis</div>
-        <div class="project-links">
-            <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+<section id="projects">
+    <div class="section-header">
+        <div class="section-num">02 / PROJECTS</div>
+        <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="projects-list">
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Medicaid Healthcare Data Analysis</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Built an end-to-end analysis pipeline on a public-health Medicaid dataset: cleaned and encoded
+                    categorical
+                    variables and computed descriptive statistics.
+                </li>
+                <li>Generated a correlation heatmap to identify key drivers of Medicaid participation.</li>
+                <li>Tested significance with a two-sample t-test comparing visit frequency between participants and
+                    non-participants.
+                </li>
+                <li>Built logistic-regression and decision-tree classifiers and a linear regression model to predict
+                    visit
+                    counts.
+                </li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">scikit-learn</span>
+                <span class="tag">Statistical Modeling</span>
+                <span class="tag">Jupyter</span>
+            </div>
         </div>
-    </div>
-    <ul class="project-points">
-        <li>Built an end-to-end analysis pipeline on a public-health Medicaid dataset: cleaned and encoded categorical variables and computed descriptive statistics.</li>
-        <li>Generated a correlation heatmap to identify key drivers of Medicaid participation.</li>
-        <li>Tested significance with a two-sample t-test comparing visit frequency between participants and non-participants.</li>
-        <li>Built logistic-regression and decision-tree classifiers and a linear regression model to predict visit counts.</li>
-    </ul>
-    <div class="project-tags">
-        <span class="tag">Python</span>
-        <span class="tag">Pandas</span>
-        <span class="tag">scikit-learn</span>
-        <span class="tag">Statistical Modeling</span>
-        <span class="tag">Jupyter</span>
-    </div>
-</div>
 
-<div class="project-card">
-    <div class="project-top">
-        <div class="project-name">EDI Purchase Order Simulator</div>
-        <div class="project-links">
-            <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">EDI Purchase Order Simulator</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Built a backend procurement-automation service simulating B2B purchase-order exchange between
+                    hospitals and
+                    suppliers.
+                </li>
+                <li>Designed a clean layered architecture using Java 17 and Spring Boot 3.2.</li>
+                <li>Engineered a scheduled monitor that triggers automated reorder workflows over REST.</li>
+                <li>Implemented a Spring Data JPA audit trail logging every transaction.</li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">Java 17</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">JPA</span>
+                <span class="tag">Maven</span>
+            </div>
         </div>
-    </div>
-    <ul class="project-points">
-        <li>Built a backend procurement-automation service simulating B2B purchase-order exchange between hospitals and suppliers.</li>
-        <li>Designed a clean layered architecture using Java 17 and Spring Boot 3.2.</li>
-        <li>Engineered a scheduled monitor that triggers automated reorder workflows over REST.</li>
-        <li>Implemented a Spring Data JPA audit trail logging every transaction.</li>
-    </ul>
-    <div class="project-tags">
-        <span class="tag">Java 17</span>
-        <span class="tag">Spring Boot</span>
-        <span class="tag">REST APIs</span>
-        <span class="tag">JPA</span>
-        <span class="tag">Maven</span>
-    </div>
-</div>
 
-<div class="project-card">
-    <div class="project-top">
-        <div class="project-name">Restaurant Order System</div>
-        <div class="project-links">
-            <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Restaurant Order System</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Designed a normalized 3NF MySQL schema with 9 interconnected tables enforcing data integrity via
+                    primary/foreign-key constraints.
+                </li>
+                <li>Built a full Java/JDBC data-access layer handling end-to-end transactions.</li>
+                <li>Implemented authentication, cart ordering, delivery-fee calculation, payment, and order-status
+                    tracking.
+                </li>
+                <li>Used INSERT/UPDATE/SELECT with multi-table JOINs across a multi-role ordering system.</li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JDBC</span>
+                <span class="tag">Database Design</span>
+                <span class="tag">3NF Schema</span>
+            </div>
         </div>
-    </div>
-    <ul class="project-points">
-        <li>Designed a normalized 3NF MySQL schema with 9 interconnected tables enforcing data integrity via primary/foreign-key constraints.</li>
-        <li>Built a full Java/JDBC data-access layer handling end-to-end transactions.</li>
-        <li>Implemented authentication, cart ordering, delivery-fee calculation, payment, and order-status tracking.</li>
-        <li>Used INSERT/UPDATE/SELECT with multi-table JOINs across a multi-role ordering system.</li>
-    </ul>
-    <div class="project-tags">
-        <span class="tag">Java</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">JDBC</span>
-        <span class="tag">Database Design</span>
-        <span class="tag">3NF Schema</span>
-    </div>
-</div>
 
-<div class="project-card">
-    <div class="project-top">
-        <div class="project-name">Toy's E-Commerce Website</div>
-        <div class="project-links">
-            <a class="project-link" href="https://github.com/Fixlei/toysss" target="_blank">GitHub ↗</a>
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Toy's E-Commerce Website</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei/toysss" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Designed and developed a full-stack e-commerce website featuring product galleries, user
+                    authentication, and
+                    a payments page.
+                </li>
+                <li>Implemented responsive design principles to optimize user experience across devices.</li>
+                <li>Deployed to production via GitHub Pages, taking the project from concept to live deployment.</li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">PHP</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">GitHub Pages</span>
+            </div>
         </div>
-    </div>
-    <ul class="project-points">
-        <li>Designed and developed a full-stack e-commerce website featuring product galleries, user authentication, and a payments page.</li>
-        <li>Implemented responsive design principles to optimize user experience across devices.</li>
-        <li>Deployed to production via GitHub Pages, taking the project from concept to live deployment.</li>
-    </ul>
-    <div class="project-tags">
-        <span class="tag">HTML5</span>
-        <span class="tag">CSS3</span>
-        <span class="tag">PHP</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">GitHub Pages</span>
-    </div>
-</div>
 
-<div class="project-card">
-    <div class="project-top">
-        <div class="project-name">Java EE User Management Application</div>
-        <div class="project-links">
-            <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Java EE User Management Application</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Built a multi-component web application handling user registration, authentication, and HTTP
+                    GET/POST form
+                    processing.
+                </li>
+                <li>Designed and implemented a MySQL database schema with full JDBC integration.</li>
+                <li>Applied object-oriented design principles using JavaBeans across a structured multi-servlet
+                    architecture.
+                </li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Jakarta Servlets</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JDBC</span>
+                <span class="tag">OOP</span>
+            </div>
         </div>
-    </div>
-    <ul class="project-points">
-        <li>Built a multi-component web application handling user registration, authentication, and HTTP GET/POST form processing.</li>
-        <li>Designed and implemented a MySQL database schema with full JDBC integration.</li>
-        <li>Applied object-oriented design principles using JavaBeans across a structured multi-servlet architecture.</li>
-    </ul>
-    <div class="project-tags">
-        <span class="tag">Java</span>
-        <span class="tag">Jakarta Servlets</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">JDBC</span>
-        <span class="tag">OOP</span>
-    </div>
-</div>
 
-<div class="project-card">
-    <div class="project-top">
-        <div class="project-name">Digital Display Screens — MBTA Orange Line</div>
-        <div class="project-links">
-            <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Digital Display Screens — MBTA Orange Line</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Redesigned the in-car LED interface applying UX principles and cognitive theory to improve real-time
+                    visual
+                    communication.
+                </li>
+                <li>Proposed an ad-supported revenue model to fund system maintenance and future development.</li>
+                <li>Balanced user needs, technical constraints, and business objectives in a real-world transportation
+                    context.
+                </li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">UX Design</span>
+                <span class="tag">Cognitive Theory</span>
+                <span class="tag">User Research</span>
+                <span class="tag">Business Model</span>
+            </div>
         </div>
-    </div>
-    <ul class="project-points">
-        <li>Redesigned the in-car LED interface applying UX principles and cognitive theory to improve real-time visual communication.</li>
-        <li>Proposed an ad-supported revenue model to fund system maintenance and future development.</li>
-        <li>Balanced user needs, technical constraints, and business objectives in a real-world transportation context.</li>
-    </ul>
-    <div class="project-tags">
-        <span class="tag">UX Design</span>
-        <span class="tag">Cognitive Theory</span>
-        <span class="tag">User Research</span>
-        <span class="tag">Business Model</span>
-    </div>
-</div>
 
-<div class="project-card">
-    <div class="project-top">
-        <div class="project-name">Information Security Governance — Marriott Data Breach</div>
-        <div class="project-links">
-            <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Information Security Governance — Marriott Data Breach</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Conducted a governance and risk assessment analysis of the Marriott data breach.</li>
+                <li>Evaluated regulatory compliance gaps across FTC and GDPR frameworks.</li>
+                <li>Developed control recommendations demonstrating an understanding of real-world security
+                    challenges.
+                </li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">Risk Assessment</span>
+                <span class="tag">Regulatory Compliance</span>
+                <span class="tag">GDPR</span>
+                <span class="tag">FTC</span>
+                <span class="tag">Security Governance</span>
+            </div>
         </div>
-    </div>
-    <ul class="project-points">
-        <li>Conducted a governance and risk assessment analysis of the Marriott data breach.</li>
-        <li>Evaluated regulatory compliance gaps across FTC and GDPR frameworks.</li>
-        <li>Developed control recommendations demonstrating an understanding of real-world security challenges.</li>
-    </ul>
-    <div class="project-tags">
-        <span class="tag">Risk Assessment</span>
-        <span class="tag">Regulatory Compliance</span>
-        <span class="tag">GDPR</span>
-        <span class="tag">FTC</span>
-        <span class="tag">Security Governance</span>
-    </div>
-</div>
 
-</div>
+    </div>
 </section>
 
 <!-- ========== EXPERIENCE ========== -->
@@ -252,7 +289,7 @@
         <!-- TODO: Replace with your real experience -->
         <div class="timeline-item">
             <div class="timeline-meta">2023 — 2025</div>
-            <div class="timeline-title">B.S. Information Technology </div>
+            <div class="timeline-title">B.S. Information Technology</div>
             <div class="timeline-company">Northeastern University</div>
             <div class="timeline-desc">
                 · Web Database, User Experience Design, E-Commerce
@@ -282,7 +319,7 @@
         <p class="contact-sub">Open to Summer 2026 software engineering internships.</p>
         <div class="contact-links">
             <a class="contact-link" href="mailto:lei.min@northeastern.edu">✉ Email</a>
-            <a class="contact-link" href="www.linkedin.com/in/minghualeifix" target="_blank">in LinkedIn</a>
+            <a class="contact-link" href="https://www.linkedin.com/in/minghualeifix" target="_blank">in LinkedIn</a>
             <a class="contact-link" href="https://github.com/Fixlei" target="_blank">⌥ GitHub</a>
             <a class="contact-link" href="assets/Minghua_Lei_Resume.pdf" target="_blank">↓ Resume</a>
         </div>
