@@ -342,6 +342,16 @@ h1.hero-name {
 .about-text {
     color: #434182;
     line-height: 1.9;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.75rem;
+    transition: border-color 0.25s, transform 0.25s;
+}
+
+.about-text:hover {
+    border-color: rgba(224, 48, 64, 0.3);
+    transform: translateY(-3px);
 }
 
 .about-text p + p {
@@ -351,6 +361,19 @@ h1.hero-name {
 .about-text strong {
     color: #376947;
     font-weight: 500;
+}
+
+.skills-col {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.75rem;
+    transition: border-color 0.25s, transform 0.25s;
+}
+
+.skills-col:hover {
+    border-color: rgba(224, 48, 64, 0.3);
+    transform: translateY(-3px);
 }
 
 .skills-label {
@@ -505,7 +528,17 @@ h1.hero-name {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 2.75rem;
+    margin-bottom: 1rem;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem 1.75rem;
+    transition: border-color 0.25s, transform 0.25s;
+}
+
+.timeline-item:hover {
+    border-color: rgba(224, 48, 64, 0.3);
+    transform: translateY(-3px);
 }
 
 .timeline-item:last-child {
@@ -516,7 +549,7 @@ h1.hero-name {
     content: '';
     position: absolute;
     left: -2.1rem;
-    top: 7px;
+    top: 1.5rem;
     width: 9px;
     height: 9px;
     border-radius: 50%;
