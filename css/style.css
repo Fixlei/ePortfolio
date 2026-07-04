@@ -160,7 +160,7 @@ hr.divider {
 }
 
 .section-header {
-    margin-bottom: 1.45rem;
+    margin-bottom: 1.25rem;
 }
 
 .section-num {
@@ -220,14 +220,14 @@ h2.section-title {
    HERO
    ============================================ */
 #hero {
-    min-height: 58vh;
+    min-height: 48vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     overflow: hidden;
     max-width: 100%;
-    padding: 1.45rem 2.5rem 2.8rem;
+    padding: 1.45rem 2.3rem 2.6rem;
 
     background-image: url('../assets/images/campus.jpeg');
     background-size: cover;
@@ -242,6 +242,21 @@ h2.section-title {
     width: 100%;
     position: relative;
     z-index: 1;
+    text-align: center;
+}
+
+.avatar-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
 
 .hero-avatar {
@@ -264,6 +279,7 @@ h2.section-title {
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-content: center;
 }
 
 .hero-tag::before {
@@ -308,6 +324,7 @@ h1.hero-name span {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hero-grid {
