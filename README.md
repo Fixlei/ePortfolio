@@ -90,7 +90,3 @@ To deploy your own copy:
 4. Save. The site publishes at \`https://<username>.github.io/<repository>/\`.
 
 ---
-
-## License
-
-This project is released under the MIT License. Feel free to use the code as a reference or template for your own portfolio.
