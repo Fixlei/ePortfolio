@@ -36,7 +36,8 @@
             <p class="hero-desc">
                 Computer Science graduate student at Northeastern University, building backend systems in Java and
                 Spring
-                Boot, full-stack web applications in PHP and JavaScript, and data analysis workflows in Python and SQL.
+                Boot, full-stack web applications in React, Next.js, TypeScript, and PHP, and data analysis workflows
+                in Python and SQL.
             </p>
             <div class="hero-cta">
                 <a class="btn btn-primary" href="#projects">View Projects</a>
@@ -55,10 +56,10 @@
     </div>
     <div class="about-grid">
         <div class="about-text">
-            <!-- TODO: Replace with your real info -->
-            <p>Hi! I'm <strong> Minghua Lei </strong>
+            <p>Hi! I'm <strong>Minghua Lei</strong>,
                 Computer Science graduate student (MSCS) at Northeastern University, building full-stack and
-                object-oriented applications in Java, Spring Boot, MySQL, and SQL.<br>
+                object-oriented applications across Java/Spring Boot backends, React/Next.js frontends, and
+                Python/SQL data workflows.<br>
                 Beyond coding, I bring strong written and verbal communication and a systems-thinking approach to
                 problem-solving — grounded in coursework in organizational communication, systems design,
                 and user experience.<br>
@@ -67,14 +68,50 @@
             <p>Currently seeking software engineering internship opportunities for Summer 2026.</p>
         </div>
         <div class="skills-col">
-            <div class="skills-label">TECH STACK</div>
+            <div class="skills-label">LANGUAGES</div>
             <div class="skills-grid">
-                <!-- TODO: Update with your actual skills -->
                 <div class="skill-tag">Java</div>
                 <div class="skill-tag">Python</div>
-                <div class="skill-tag">SQL / MySQL</div>
+                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">TypeScript</div>
+                <div class="skill-tag">SQL</div>
+                <div class="skill-tag">PHP</div>
+            </div>
+            <div class="skills-label">FRAMEWORKS &amp; LIBRARIES</div>
+            <div class="skills-grid">
+                <div class="skill-tag">Spring Boot</div>
+                <div class="skill-tag">Spring Data JPA</div>
+                <div class="skill-tag">Jakarta Servlets</div>
+                <div class="skill-tag">React</div>
+                <div class="skill-tag">Next.js</div>
+                <div class="skill-tag">Vite</div>
+                <div class="skill-tag">Node.js / Express</div>
+            </div>
+            <div class="skills-label">DATABASES</div>
+            <div class="skills-grid">
+                <div class="skill-tag">MySQL</div>
+                <div class="skill-tag">MongoDB</div>
+                <div class="skill-tag">H2</div>
+                <div class="skill-tag">JDBC</div>
+            </div>
+            <div class="skills-label">DATA &amp; AI</div>
+            <div class="skills-grid">
+                <div class="skill-tag">Pandas</div>
+                <div class="skill-tag">scikit-learn</div>
+                <div class="skill-tag">Statistical Modeling</div>
+                <div class="skill-tag">RAG / LLM Applications</div>
+                <div class="skill-tag">Jupyter</div>
+            </div>
+            <div class="skills-label">TOOLS &amp; PRACTICES</div>
+            <div class="skills-grid">
                 <div class="skill-tag">Git / GitHub</div>
-                <div class="skill-tag"></div>
+                <div class="skill-tag">Maven</div>
+                <div class="skill-tag">JUnit</div>
+                <div class="skill-tag">REST APIs</div>
+                <div class="skill-tag">Stripe API</div>
+                <div class="skill-tag">Design Patterns</div>
+                <div class="skill-tag">Agile / Scrum</div>
+                <div class="skill-tag">Vercel</div>
             </div>
         </div>
     </div>
@@ -92,22 +129,149 @@
     <div class="projects-list">
         <div class="project-card">
             <div class="project-top">
-                <div class="project-name">Medicaid Healthcare Data Analysis</div>
+                <div class="project-name">EDI Purchase Order Simulator</div>
                 <div class="project-links">
                     <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
                 </div>
             </div>
             <ul class="project-points">
-                <li>Built an end-to-end analysis pipeline on a public-health Medicaid dataset: cleaned and encoded
-                    categorical
-                    variables and computed descriptive statistics.
+                <li>Built a backend procurement-automation service in Java 17 and Spring Boot 3.2 simulating B2B
+                    purchase-order exchange between hospitals and suppliers, inspired by Philips Healthcare EDI
+                    workflows.
+                </li>
+                <li>Hand-coded an ANSI X12 850 generator (standard ISA/GS/ST segments, no third-party libraries)
+                    within a layered Spring architecture spanning Scheduler, Service, Generator, and REST Controller.
+                </li>
+                <li>Engineered a Spring Scheduled monitor with 30-second polling to trigger automated reorder
+                    workflows, backed by a Spring Data JPA and H2 audit trail logging every transaction.
+                </li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">Java 17</span>
+                <span class="tag">Spring Boot 3.2</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">JPA</span>
+                <span class="tag">H2</span>
+                <span class="tag">Maven</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Restaurant Order System (CS 5200)</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Built a ~1,150-LOC Java console application on MySQL over JDBC, using 15+ parameterized
+                    prepared and callable statements to deliver full CRUD for customer and administrator roles
+                    while guarding against SQL injection.
+                </li>
+                <li>Designed a normalized 3NF schema with 9 interconnected tables enforcing data integrity via
+                    primary/foreign-key constraints.
+                </li>
+                <li>Implemented authentication, cart ordering, delivery-fee calculation, payment, and order-status
+                    tracking across a multi-role system, using INSERT/UPDATE/SELECT with multi-table JOINs for
+                    reporting and lookups.
+                </li>
+                <li>Automated order creation, total calculation, and order-count updates with 4 stored procedures,
+                    2 functions, and 2 triggers.
+                </li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JDBC</span>
+                <span class="tag">Database Design</span>
+                <span class="tag">3NF Schema</span>
+                <span class="tag">Stored Procedures</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Hospital Billing System</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Implemented the Visitor design pattern to decouple billing logic from patient and department
+                    classes, enabling new billing rules to be added without modifying existing domain objects.
+                </li>
+                <li>Modeled 4 billing categories (inpatient, outpatient, emergency, specialist) as concrete visitor
+                    classes, reducing conditional branching and improving testability of each billing rule in
+                    isolation.
+                </li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Design Patterns</span>
+                <span class="tag">OOP</span>
+                <span class="tag">Software Architecture</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Time Series Library</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Designed an immutable Time value-object class in Java using final fields, static factory
+                    methods, equals/hashCode/Comparable, and input validation following Effective Java principles.
+                </li>
+                <li>Wrote a JUnit test suite covering boundary and overflow cases including 23:59:59 rollover and
+                    invalid input.
+                </li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">JUnit</span>
+                <span class="tag">Effective Java</span>
+                <span class="tag">Unit Testing</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Northeastern New-Student RAG Chatbot (ITC 4983)</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Designed and trained a Retrieval-Augmented Generation (RAG) chatbot grounded in official
+                    Northeastern University resources to help incoming students find accurate answers about
+                    campus life and services.
+                </li>
+                <li>Built a 15-prompt test suite to validate retrieval accuracy and Responsible-AI compliance.</li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">RAG</span>
+                <span class="tag">LLM Applications</span>
+                <span class="tag">Prompt Engineering</span>
+                <span class="tag">Responsible AI</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Healthcare Program Participation &amp; Utilization Analysis (ALY 2100)</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Built an end-to-end analytics pipeline on a 996-patient public-health dataset (14 variables):
+                    cleaned and encoded categorical variables and computed descriptive statistics.
                 </li>
                 <li>Generated a correlation heatmap to identify key drivers of Medicaid participation.</li>
-                <li>Tested significance with a two-sample t-test comparing visit frequency between participants and
-                    non-participants.
-                </li>
-                <li>Built logistic-regression and decision-tree classifiers and a linear regression model to predict
-                    visit
+                <li>Validated the Medicaid–utilization link with a two-sample t-test (t = -2.95, p = 0.0033), then
+                    benchmarked logistic regression, decision tree, and linear regression models to predict visit
                     counts.
                 </li>
             </ul>
@@ -122,52 +286,103 @@
 
         <div class="project-card">
             <div class="project-top">
-                <div class="project-name">EDI Purchase Order Simulator</div>
+                <div class="project-name">Course Management Web App — Canvas-Style LMS (CS 5610)</div>
                 <div class="project-links">
                     <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
                 </div>
             </div>
             <ul class="project-points">
-                <li>Built a backend procurement-automation service simulating B2B purchase-order exchange between
-                    hospitals and
-                    suppliers.
+                <li>Building a Canvas-style learning management system with the Next.js App Router and TypeScript,
+                    implementing Login/Register, Home, Profile, and course Search/Results pages from reusable React
+                    components and shared layouts.
                 </li>
-                <li>Designed a clean layered architecture using Java 17 and Spring Boot 3.2.</li>
-                <li>Engineered a scheduled monitor that triggers automated reorder workflows over REST.</li>
-                <li>Implemented a Spring Data JPA audit trail logging every transaction.</li>
+                <li>Deploying each milestone from GitHub to a public Vercel URL; using Claude Code and Cursor to
+                    speed up scaffolding and refactoring while reviewing all AI-generated code and enforcing
+                    ESLint/Prettier standards.
+                </li>
+                <li>Partnering with a teammate on the final project: designing the Details page and adding a
+                    Node.js/Express REST API and MongoDB.
+                </li>
             </ul>
             <div class="project-tags">
-                <span class="tag">Java 17</span>
-                <span class="tag">Spring Boot</span>
-                <span class="tag">REST APIs</span>
-                <span class="tag">JPA</span>
-                <span class="tag">Maven</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js / Express</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">In Progress</span>
             </div>
         </div>
 
         <div class="project-card">
             <div class="project-top">
-                <div class="project-name">Restaurant Order System</div>
+                <div class="project-name">Holos Multimedia — Live Music-Artist Platform (ITC 4850 Capstone)</div>
                 <div class="project-links">
                     <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
                 </div>
             </div>
             <ul class="project-points">
-                <li>Designed a normalized 3NF MySQL schema with 9 interconnected tables enforcing data integrity via
-                    primary/foreign-key constraints.
+                <li>Integrated the Stripe REST API to enable payments and fan donations on a live platform
+                    connecting independent musicians, vendors, and fans; led development of a Shop page with
+                    product filtering, categories, and pricing.
                 </li>
-                <li>Built a full Java/JDBC data-access layer handling end-to-end transactions.</li>
-                <li>Implemented authentication, cart ordering, delivery-fee calculation, payment, and order-status
-                    tracking.
+                <li>Drove on-page SEO across 6+ pages (keyword research, AI-assisted meta descriptions and title
+                    tags) and built an English/Haitian-Creole language toggle, applying UX principles to
+                    navigation and layout.
                 </li>
-                <li>Used INSERT/UPDATE/SELECT with multi-table JOINs across a multi-role ordering system.</li>
             </ul>
             <div class="project-tags">
-                <span class="tag">Java</span>
-                <span class="tag">MySQL</span>
-                <span class="tag">JDBC</span>
-                <span class="tag">Database Design</span>
-                <span class="tag">3NF Schema</span>
+                <span class="tag">Stripe API</span>
+                <span class="tag">SEO</span>
+                <span class="tag">UX Design</span>
+                <span class="tag">Localization</span>
+                <span class="tag">Client Project</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">E-Commerce Music Platform</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Integrated the Stripe REST API for payments, donations, and checkout on a live platform,
+                    including user registration and profile flows.
+                </li>
+                <li>Delivered features in Scrum sprints tracked in Jira; maintained schedule after the team
+                    dropped from 4 to 2 by reprioritizing scope.
+                </li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">Stripe API</span>
+                <span class="tag">Scrum</span>
+                <span class="tag">Jira</span>
+                <span class="tag">REST APIs</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="project-name">Toy Shop Web App</div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <ul class="project-points">
+                <li>Built a full-stack e-commerce interface using React and Vite with a product gallery, user
+                    authentication flow, and shopping cart powered by React Hooks for state management.
+                </li>
+                <li>Deployed to Vercel with custom root-directory build configuration, resolving pipeline issues
+                    and achieving sub-2s load time.
+                </li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Vite</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Vercel</span>
             </div>
         </div>
 
@@ -223,19 +438,22 @@
 
         <div class="project-card">
             <div class="project-top">
-                <div class="project-name">Digital Display Screens — MBTA Orange Line</div>
+                <div class="project-name">MBTA Orange Line LED Display Redesign (ITC 2050)</div>
                 <div class="project-links">
                     <a class="project-link" href="https://github.com/Fixlei" target="_blank">GitHub ↗</a>
                 </div>
             </div>
             <ul class="project-points">
-                <li>Redesigned the in-car LED interface applying UX principles and cognitive theory to improve real-time
-                    visual
-                    communication.
+                <li>Redesigned the in-car LED display interface — replacing text and color-coding with icons and
+                    animation — to close accessibility gaps for non-English-speaking and first-time riders,
+                    applying UX principles and cognitive theory to improve real-time visual communication.
                 </li>
-                <li>Proposed an ad-supported revenue model to fund system maintenance and future development.</li>
-                <li>Balanced user needs, technical constraints, and business objectives in a real-world transportation
-                    context.
+                <li>Validated the redesign through expert heuristic review and usability testing.</li>
+                <li>Modeled an illustrative ad-supported revenue stream to offset MBTA operating costs within a
+                    5-phase project plan.
+                </li>
+                <li>Balanced user needs, technical constraints, and business objectives in a real-world
+                    transportation context.
                 </li>
             </ul>
             <div class="project-tags">
@@ -243,6 +461,7 @@
                 <span class="tag">Cognitive Theory</span>
                 <span class="tag">User Research</span>
                 <span class="tag">Business Model</span>
+                <span class="tag">Accessibility</span>
             </div>
         </div>
 

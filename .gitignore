@@ -1,2 +1,26 @@
+# ===== IDE =====
 .idea/
 *.iml
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Logs / Temp =====
+*.log
+*.tmp
+~$*
+
+# ===== Resume drafts (keep only the final version you link to) =====
+*Resume*.docx
+Minghua_Lei_Resume042026.pdf
+Minghua_Lei_Resume062226.docx
+
+# ===== Personal notes / drafts not meant for the public repo =====
+notes.txt
+TODO.md
+*.draft.md
+
+# ===== Unused image drafts =====
+assets/images/draft-*
+assets/images/*-old.*
